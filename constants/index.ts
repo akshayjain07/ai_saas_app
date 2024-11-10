@@ -5,27 +5,27 @@ export const navLinks = [
     icon: "/assets/icons/home.svg",
   },
   {
-    label: "Image Restore",
+    label: "Upload by Image",
     route: "/transformations/add/restore",
     icon: "/assets/icons/image.svg",
   },
   {
-    label: "Generative Fill",
+    label: "Search by Image",
     route: "/transformations/add/fill",
     icon: "/assets/icons/stars.svg",
   },
   {
-    label: "Object Remove",
+    label: "Submit Locations",
     route: "/transformations/add/remove",
     icon: "/assets/icons/scan.svg",
   },
   {
-    label: "Object Recolor",
+    label: "Contact Us",
     route: "/transformations/add/recolor",
     icon: "/assets/icons/filter.svg",
   },
   {
-    label: "Background Remove",
+    label: "Made By",
     route: "/transformations/add/removeBackground",
     icon: "/assets/icons/camera.svg",
   },
@@ -136,29 +136,29 @@ export const transformationTypes = {
   },
   fill: {
     type: "fill",
-    title: "Generative Fill",
+    title: "Search by Image",
     subTitle: "Enhance an image's dimensions using AI outpainting",
     config: { fillBackground: true },
     icon: "stars.svg",
   },
-  remove: {
-    type: "remove",
-    title: "Object Remove",
-    subTitle: "Identify and eliminate objects from images",
-    config: {
-      remove: { prompt: "", removeShadow: true, multiple: true },
-    },
-    icon: "scan.svg",
-  },
-  recolor: {
-    type: "recolor",
-    title: "Object Recolor",
-    subTitle: "Identify and recolor objects from the image",
-    config: {
-      recolor: { prompt: "", to: "", multiple: true },
-    },
-    icon: "filter.svg",
-  },
+  // remove: {
+  //   type: "remove",
+  //   title: "Object Remove",
+  //   subTitle: "Identify and eliminate objects from images",
+  //   config: {
+  //     remove: { prompt: "", removeShadow: true, multiple: true },
+  //   },
+  //   icon: "scan.svg",
+  // },
+  // recolor: {
+  //   type: "recolor",
+  //   title: "Object Recolor",
+  //   subTitle: "Identify and recolor objects from the image",
+  //   config: {
+  //     recolor: { prompt: "", to: "", multiple: true },
+  //   },
+  //   icon: "filter.svg",
+  // },
 };
 
 export const aspectRatioOptions = {
