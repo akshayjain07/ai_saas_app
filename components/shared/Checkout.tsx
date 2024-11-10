@@ -4,19 +4,19 @@ import { loadStripe } from "@stripe/stripe-js";
 import { useEffect } from "react";
 
 import { useToast } from "@/components/ui/use-toast";
-import { checkoutCredits } from "@/lib/actions/transaction.action";
+// import { checkoutCredits } from "@/lib/actions/transaction.action";
 
 import { Button } from "../ui/button";
 
 const Checkout = ({
   plan,
   amount,
-  credits,
+  // credits,
   buyerId,
 }: {
   plan: string;
   amount: number;
-  credits: number;
+  // credits: number;
   buyerId: string;
 }) => {
   const { toast } = useToast();
@@ -51,11 +51,11 @@ const Checkout = ({
     const transaction = {
       plan,
       amount,
-      credits,
+      // credits,
       buyerId,
     };
 
-    await checkoutCredits(transaction);
+    // await checkoutCredits(transaction);
   };
 
   return (
@@ -66,7 +66,8 @@ const Checkout = ({
           role="link"
           className="w-full rounded-full bg-purple-gradient bg-cover"
         >
-          Buy Credit
+          Buy 
+          {/* Buy Credit */}
         </Button>
       </section>
     </form>
