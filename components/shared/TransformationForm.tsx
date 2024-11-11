@@ -317,7 +317,7 @@ const TransformationForm = ({ action, data = null, userId, type, config = null }
               type="submit"
               className="btn-primary"
             >
-              {action === 'Update' ? 'Update' : 'Create'}
+              {action === 'Update' ? 'Update' : 'Report'}
             </Button>
           </div>
         </div>
