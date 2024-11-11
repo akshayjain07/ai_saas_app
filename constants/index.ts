@@ -1,3 +1,54 @@
+// constants/index.js
+export const image = [
+// export const SAMPLE_IMAGES = [
+  {
+    _id: "1",
+    publicId: "sample1",
+    author: {
+      _id: "user1",
+      firstName: "John",
+      lastName: "Doe",
+      clerkId: "clerk1",
+    },
+    color: "https://via.placeholder.com/300x200.png?text=Sample+Image+1",
+    title: "Sample Image 1",
+    width: 300,
+    height: 200,
+    transformationType: "example",
+  },
+  {
+    _id: "2",
+    publicId: "sample2",
+    author: {
+      _id: "user2",
+      firstName: "Jane",
+      lastName: "Smith",
+      clerkId: "clerk2",
+    },
+    color: "https://via.placeholder.com/300x200.png?text=Sample+Image+2",
+    title: "Sample Image 2",
+    width: 300,
+    height: 200,
+    transformationType: "example",
+  },
+  {
+    _id: "3",
+    publicId: "sample3",
+    author: {
+      _id: "user3",
+      firstName: "Alice",
+      lastName: "Johnson",
+      clerkId: "clerk3",
+    },
+    color: "https://via.placeholder.com/300x200.png?text=Sample+Image+3",
+    title: "Sample Image 3",
+    width: 300,
+    height: 200,
+    transformationType: "example",
+  },
+];
+
+
 export const navLinks = [
   {
     label: "Home",
@@ -5,29 +56,30 @@ export const navLinks = [
     icon: "/assets/icons/home.svg",
   },
   {
-    label: "Upload by Image",
-    route: "/transformations/add/restore",
-    icon: "/assets/icons/image.svg",
+    label: "Report Lost",
+    route: "/report_lost",
+    icon: "/assets/icons/camera.svg",
   },
   {
-    label: "Search by Image",
-    route: "/transformations/add/fill",
-    icon: "/assets/icons/stars.svg",
-  },
-  {
-    label: "Submit Locations",
-    route: "/transformations/add/remove",
+    label: "Report Found",
+    route: "/report_found",
+    // icon: "/assets/icons/stars.svg",
     icon: "/assets/icons/scan.svg",
   },
   {
-    label: "Contact Us",
-    route: "/transformations/add/recolor",
+    label: "Submission Centers",
+    route: "/submit_item",
+    icon: "/assets/icons/image.svg",
+  },
+  {
+    label: "Contact Support",
+    route: "/contact_support",
     icon: "/assets/icons/filter.svg",
   },
   {
-    label: "Made By",
-    route: "/transformations/add/removeBackground",
-    icon: "/assets/icons/camera.svg",
+    label: "Credits",
+    route: "/credits",
+    icon: "/assets/icons/stars.svg",
   },
   {
     label: "Profile",
@@ -141,24 +193,24 @@ export const transformationTypes = {
     config: { fillBackground: true },
     icon: "stars.svg",
   },
-  // remove: {
-  //   type: "remove",
-  //   title: "Object Remove",
-  //   subTitle: "Identify and eliminate objects from images",
-  //   config: {
-  //     remove: { prompt: "", removeShadow: true, multiple: true },
-  //   },
-  //   icon: "scan.svg",
-  // },
-  // recolor: {
-  //   type: "recolor",
-  //   title: "Object Recolor",
-  //   subTitle: "Identify and recolor objects from the image",
-  //   config: {
-  //     recolor: { prompt: "", to: "", multiple: true },
-  //   },
-  //   icon: "filter.svg",
-  // },
+  remove: {
+    type: "remove",
+    title: "Object Remove",
+    subTitle: "Identify and eliminate objects from images",
+    config: {
+      remove: { prompt: "", removeShadow: true, multiple: true },
+    },
+    icon: "scan.svg",
+  },
+  recolor: {
+    type: "recolor",
+    title: "Object Recolor",
+    subTitle: "Identify and recolor objects from the image",
+    config: {
+      recolor: { prompt: "", to: "", multiple: true },
+    },
+    icon: "filter.svg",
+  },
 };
 
 export const aspectRatioOptions = {
@@ -191,3 +243,27 @@ export const defaultValues = {
 };
 
 // export const creditFee = -1;
+
+export const header = {
+  contact_support : {
+    title : "Contact Support",
+    subtitle : "Contact Support",
+  },
+  report_lost : {
+    title : "Report Lost Item",
+    subtitle : "Contact Support",
+  },
+  report_found : {
+    title : "Report FoundItem",
+    subtitle : "Contact Support",
+  },
+  submit_item : {
+    title : "Item Submission Centers",
+    subtitle : "Contact Support",
+  },
+  credits : {
+    title : "Findo App Credits",
+    subtitle : "Contact Support",
+  },
+
+}
