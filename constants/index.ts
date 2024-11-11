@@ -174,29 +174,29 @@ export const plans = [
 export const transformationTypes = {
   restore: {
     type: "restore",
-    title: "Restore Image",
-    subTitle: "Refine images by removing noise and imperfections",
+    title: "Report Lost",
+    subTitle: "Easily report lost items by providing necessary details, allowing others in the community to help recover them.",
     config: { restore: true },
     icon: "image.svg",
   },
   removeBackground: {
     type: "removeBackground",
     title: "Background Remove",
-    subTitle: "Removes the background of the image using AI",
+    subTitle: " Explore a list of items found by others, and contribute to reuniting lost belongings with their rightful owners.",
     config: { removeBackground: true },
     icon: "camera.svg",
   },
   fill: {
     type: "fill",
     title: "Search by Image",
-    subTitle: "Enhance an image's dimensions using AI outpainting",
+    subTitle: "Locate nearby submission centers where you can drop off or pick up lost and found items with ease.",
     config: { fillBackground: true },
     icon: "stars.svg",
   },
   remove: {
     type: "remove",
     title: "Object Remove",
-    subTitle: "Identify and eliminate objects from images",
+    subTitle: "For any assistance or queries related to lost and found items, get in touch with Team Sahyog.",
     config: {
       remove: { prompt: "", removeShadow: true, multiple: true },
     },
@@ -205,7 +205,7 @@ export const transformationTypes = {
   recolor: {
     type: "recolor",
     title: "Object Recolor",
-    subTitle: "Identify and recolor objects from the image",
+    subTitle: "The development and creation of this website are credited to Akshay Jain, Aditya Maharshi, and Pratik Verma, showcasing their collaborative effort and creativity.",
     config: {
       recolor: { prompt: "", to: "", multiple: true },
     },
@@ -247,23 +247,23 @@ export const defaultValues = {
 export const header = {
   contact_support : {
     title : "Contact Support",
-    subtitle : "Contact Support",
+    subtitle : "For any assistance or queries related to lost and found items, get in touch with Team Sahyog.",
   },
   report_lost : {
     title : "Report Lost Item",
-    subtitle : "Contact Support",
+    subtitle : "Easily report lost items by providing necessary details, allowing others in the community to help recover them.",
   },
   report_found : {
-    title : "Report FoundItem",
-    subtitle : "Contact Support",
+    title : "Report Found Item",
+    subtitle : " Explore a list of items found by others, and contribute to reuniting lost belongings with their rightful owners.",
   },
   submit_item : {
     title : "Item Submission Centers",
-    subtitle : "Contact Support",
+    subtitle : "Locate nearby submission centers where you can drop off or pick up lost and found items with ease.",
   },
   credits : {
     title : "Findo App Credits",
-    subtitle : "Contact Support",
+    subtitle : "The development and creation of this website are credited to Akshay Jain, Aditya Maharshi, and Pratik Verma, showcasing their collaborative effort and creativity.",
   },
 
 }

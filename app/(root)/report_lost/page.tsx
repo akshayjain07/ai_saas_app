@@ -1,11 +1,11 @@
 import Header from '@/components/shared/Header'
 import TransformationForm from '@/components/shared/TransformationForm';
-import { transformationTypes } from '@/constants'
+import { transformationTypes, header } from '@/constants'
 import { getUserById } from '@/lib/actions/user.actions';
 import { auth } from '@clerk/nextjs';
 import { redirect } from 'next/navigation';
 
-const Report_lost = async ({ params: { type } }: SearchParamProps) => {
+const Report_found = async ({ params: { type } }: SearchParamProps) => {
   const { userId } = auth();
   const transformation = transformationTypes[type];
 
@@ -16,10 +16,8 @@ const Report_lost = async ({ params: { type } }: SearchParamProps) => {
   return (
     <>
       <Header 
-        title={transformationTypes.restore.title}
-        subtitle={transformationTypes.restore.title}
-        // title="aj"
-        // subtitle='akaks'
+        title={header.report_lost.title}
+        subtitle={header.report_lost.subtitle}
       />
     
       <section className="mt-10">
@@ -34,4 +32,41 @@ const Report_lost = async ({ params: { type } }: SearchParamProps) => {
   )
 }
 
-export default Report_lost
+export default Report_found
+
+
+// import Header from '@/components/shared/Header'
+// import TransformationForm from '@/components/shared/TransformationForm';
+// import { transformationTypes, header } from '@/constants'
+// import { getUserById } from '@/lib/actions/user.actions';
+// import { auth } from '@clerk/nextjs';
+// import { redirect } from 'next/navigation';
+
+// const Report_lost = async ({ params: { type } }: SearchParamProps) => {
+//   const { userId } = auth();
+//   const transformation = transformationTypes[type];
+
+//   if(!userId) redirect('/sign-in')
+
+//   const user = await getUserById(userId);
+
+//   return (
+//     <>
+//       <Header 
+//         title={header.report_lost.title}
+//         subtitle={header.report_lost.subtitle}
+//       />
+    
+//       <section className="mt-10">
+//         <TransformationForm 
+//           action="Add"
+//           userId={user._id}
+//           type={transformationTypes.restore.type as TransformationTypeKey}
+//           // creditBalance={user.creditBalance}
+//         />
+//       </section>
+//     </>
+//   )
+// }
+
+// export default Report_lost

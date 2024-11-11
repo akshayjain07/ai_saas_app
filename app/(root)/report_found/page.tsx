@@ -1,6 +1,6 @@
 import Header from '@/components/shared/Header'
 import TransformationForm from '@/components/shared/TransformationForm';
-import { transformationTypes } from '@/constants'
+import { transformationTypes, header } from '@/constants'
 import { getUserById } from '@/lib/actions/user.actions';
 import { auth } from '@clerk/nextjs';
 import { redirect } from 'next/navigation';
@@ -16,8 +16,8 @@ const Report_found = async ({ params: { type } }: SearchParamProps) => {
   return (
     <>
       <Header 
-        title={transformationTypes.restore.title}
-        subtitle={transformationTypes.restore.title}
+        title={header.report_found.title}
+        subtitle={header.report_found.subtitle}
       />
     
       <section className="mt-10">

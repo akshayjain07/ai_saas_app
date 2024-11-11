@@ -8,24 +8,24 @@ import aj from "../../public/assets/images/findo.jpg";
 export const Collection = () => {
   // Hardcoded images and data for 18 cards
   const images = [
-    { _id: "1", title: "Lost Wallet", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "2", title: "Found Phone", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "3", title: "Lost Watch", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "4", title: "Found Ring", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "5", title: "Lost Bag", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "6", title: "Found Shoes", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "7", title: "Lost Jacket", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "8", title: "Found Keys", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "9", title: "Lost Glasses", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "10", title: "Found Watch", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "11", title: "Lost Phone", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "12", title: "Found Bag", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "13", title: "Lost Ring", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "14", title: "Found Shoes", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "15", title: "Lost Glasses", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "16", title: "Found Keys", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "17", title: "Lost Wallet", color: "/assets/images/findo.jpg", width: 200, height: 200 },
-    { _id: "18", title: "Found Jacket", color: "/assets/images/findo.jpg", width: 200, height: 200 },
+    { _id: "1", title: "Lost Wallet", color: "/assets/images/wallet.jpg", width: 200, height: 200 },
+    { _id: "2", title: "Found Phone", color: "/assets/images/phone.jpg", width: 200, height: 200 },
+    { _id: "3", title: "Lost Watch", color: "/assets/images/ring.jpg", width: 200, height: 200 },
+    { _id: "4", title: "Found Ring", color: "/assets/images/ring.jpg", width: 200, height: 200 },
+    { _id: "5", title: "Lost Bag", color: "/assets/images/bags.jpg", width: 200, height: 200 },
+    { _id: "6", title: "Found Shoes", color: "/assets/images/books.jpg", width: 200, height: 200 },
+    { _id: "7", title: "Lost Jacket", color: "/assets/images/iphone.jpg", width: 200, height: 200 },
+    { _id: "8", title: "Found Keys", color: "/assets/images/laptop.jpg", width: 200, height: 200 },
+    { _id: "9", title: "Lost Glasses", color: "/assets/images/glasses.jpg", width: 200, height: 200 },
+    { _id: "10", title: "Found Watch", color: "/assets/images/watch.jpg", width: 200, height: 200 },
+    { _id: "11", title: "Lost Phone", color: "/assets/images/phone.jpg", width: 200, height: 200 },
+    { _id: "12", title: "Found Bag", color: "/assets/images/bags.jpg", width: 200, height: 200 },
+    { _id: "13", title: "Lost Ring", color: "/assets/images/ring.jpg", width: 200, height: 200 },
+    { _id: "14", title: "Found Shoes", color: "/assets/images/shoes.jpg", width: 200, height: 200 },
+    { _id: "15", title: "Lost Glasses", color: "/assets/images/glasses.jpg", width: 200, height: 200 },
+    { _id: "16", title: "Found Keys", color: "/assets/images/keys.jpg", width: 200, height: 200 },
+    { _id: "17", title: "Lost Wallet", color: "/assets/images/wallet.jpg", width: 200, height: 200 },
+    { _id: "18", title: "Found Jacket", color: "/assets/images/jacket.jpg", width: 200, height: 200 },
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -51,7 +51,7 @@ export const Collection = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto py-8">
-      <h2 className="h2-bold text-dark-600 text-center mb-6">Recent Founds</h2>
+      <h2 className="h2-bold text-dark-600 text-center mb-6">Recent Losts / Founds</h2>
 
       <div className="collection-list flex flex-wrap gap-4 justify-center">
         {currentItems.map((image) => (
